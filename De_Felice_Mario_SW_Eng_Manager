@@ -1,0 +1,211 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Mario}
+\familyname{De Felice}
+\title{PhD M-Eng B-Eng}                          % optional, remove / comment the line if not wanted
+\address{27 Montrose Road,\\
+Rugby\\}{CV225PB United Kingdom}    % optional, remove / comment the line if not wanted
+%\mobile{+1~(234)~567~890}                     % optional, remove / comment the line if not wanted
+\phone{+44 07502 756613}                      % optional, remove / comment the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove / comment the line if not wanted
+\email{mario.de.felice@gmail.com}                          % optional, remove / comment the line if not wanted
+%\homepage{http://net.infocom.uniroma1.it/homepages/defelice.html}                    % optional, remove / comment the line if not wanted
+%\homepage{http://alturl.com/srbov}
+\homepage{linkedin.com/in/mariodefelice}            % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{Picture_s1}                  % optional, remove / comment the line if not wanted;
+%'64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\photo[64pt][0.4pt]{tessera_funny1}
+\quote{Software Architecture \& Engineering Manager\\Jaguar Land Rover}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2012--2015}{Ph.D. in Computer Science and Telecommunication Engineering}{Sapienza University \& UCLA}{Rome, Los Angeles}{}{}  % arguments 3 to 6 can be left empty
+%\cvitem{Classification:}{Excellent}
+\cvitem{Thesis}{\emph{Vehicular networking for safety and infotainment services. An heterogeneous approach to
+Intelligent Transport System}}
+
+\cventry{2009--2012}{Masters Degree in Computer Engineering}{with specialisation in Computer Networks}{Sapienza University}{Rome}{Thesis:"Enhancing infotainment dissemination in vehicular ad-hoc networks"}  % arguments 3 to 6 can be left empty
+\cventry{2002--2009}{Bachelor Degree in Computer Engineering}{Federico II University}{Napoli}{}{Thesis:\textit{"Design and implementation of a protocol extension for wireless networks security"}}
+\cventry{2017}{Yellow Belt Problem Solver}{}{}{}{}
+%\textit{97/110}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Experience}
+\subsection{Product Creation and Delivery}
+\cventry{2018-present}{Software Architecture \& Engineering Manager}{Jaguar Land Rover}{}{}{
+Management of connected car and infotainment system and software: design and development, including requirements, system performance, security, data analytics, tools and processes. \\
+Across three projects, my responsibilities go from the design and delivery of system functions (e.g. software over the air) to the customer facing features, including challenging issues resolution.\\
+As an improvement and transformation champion, I have redefined tools and auditable processes in the company, introduced Scaled Agile and taught a course in Software Delivery aimed at JLR directors and chiefs, as part of JLR transformation journey to an agile software development company.}
+
+\cventry{2016-2017}{Lead Infotainment System and Software Architect}{Jaguar Land Rover}{}{}{
+Team leadership, future and current infotainment system/software design, infotainment change management control, suppliers/stakeholders management and technical reviews, requirements management, CRM, continuous improvement lead.}
+\cventry{2015-2016}{Next Generation Infotainment System and Software Architect}{Jaguar Land Rover}{}{}{From Requirements engineering, through system and software design and interactions, CAN bus/Flexray signals design, to future infotainment system architecture. A great journey to produce the highest quality products.
+\\
+Main applications designed: Climate, Seats, Park Assist, Park Aid, Self-Learning Car}
+\cventry{2010--2015}{Quality Lead}{Lionbridge contractor at Google}{}{}{Team technical moderation and coordination; Quality certification, Localisation for the Italian market, verification, validation and improved user experience.}
+\cventry{2009--2010}{Quality Assessor}{Lionbridge contractor at Google}{}{}{Localisation for the Italian market, verification, validation and improved user experience.}
+\subsection{Research Industry}
+\cventry{2013}{Traffic management through Vehicular ad-hoc Networks}{University of California Los Angeles (UCLA)}{Los Angeles, CA}{}{Internship on ADAS and V2X applications: traffic information and navigation re-routing via heterogeneous sources (cellular, V2X, traditional probes).}
+\cventry{2011--2012}{Vehicular ad-hoc network research engineer}{Sapienza University \& Telecom Italia}{Rome}{}{Feasibility study for transmission protocols in VANETs (V2X); tuning of software stack for simulations (ns-2 and SUMO); design and implementation of routing protocols.}
+\cventry{2009}{Wireless security research trainee}{Federico II University}{Naples}{}{Planning, implementation and testing of a protocol extension (DSDV-REX) for security in wireless networks.}
+
+
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Awards}
+\cvitem{UCLA Internship award}{The award was conferred for the research project presented on VANETs (Vehicular Ad-Hoc Networks) by both the CNI (Consiglio Nazionale Ingegneri) and the ISSNAF (Italian Scientists and Scholars of North America Foundation).}
+
+\cvitem{Jaguar Land Rover}{Technical Excellence Award 2016: For making an outstanding contribution to the growth of technical excellence by Jaguar Land Rover.}
+
+\cvitem{Jaguar Land Rover}{Technical Excellence Award 2019: Special recognition award for outstanding technical achievement and contribution to Jaguar Land Rover's pioneering future.}
+
+\section{Languages}
+\cvitemwithcomment{Italian}{Mother tongue}{}
+\cvitemwithcomment{English}{Understanding: C2 - Speaking: C2 - Writing: C2}{}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Technical skills}
+\cvitem{Analysis \& design}{Aspice, Software design (from requirements to implementation), cloud architecture, hardware dimensioning.}
+\cvitem{Main tools}{IBM rational (Doors, Rhapsody, Clearquest), IBM RTC, JIRA, Confluence}
+\cvitem{Automotive}{Autosar, CAN, Flexray, BroadR-Reach, SOME/IP, Diagnostics}
+\cvitem{Continuous Integration}{Custom build systems (Yocto, baserock, OBS), Continuous Delivery (GitLab, Jenkins, JFrog Artifactory)}
+\cvitem{Quality}{IATF 16949, Web certifications}
+\cvitem{Data Analytics}{Connected Diagnostics, non-relational databases, Cloud computing}
+\cvitem{Coding}{C++, C, AWK, JavaScript, Html, PHP, Sql, UML, JAVA, Matlab, Android}
+\cvitem{Operating Systems}{Unix/Linux-based, QNX, QNX hypervisor, Microsoft Windows, Android}
+\cvitem{Networking}{TCP/IP (intra/ extra domain routing, transport layer), 802.11x, Cisco, V2X}
+\cvitem{Simulation}{Matlab, ns-2, Simulator of Urban Mobility (SUMO).}
+%\cvitem{Misc}{Microsoft Office, digital processing (audio, video, images).}
+
+\section{Personal and management skills}
+\cvitem{Project Governance}{Scaled Agile (SAFe), Waterfall and hybrid to meet milestones while allowing agile development.}
+\cvitem{Attitude}{Love new technologies, thinking outside the box, leading business transformation and defining strategies}
+\cvitem{Leadership}{Both active (leading the team, setting  direction and strategy) and proactive (identifying and implementing process improvements).}
+\cvitem{Planning}{Strong reactivity to short term challenges, with focus on long term solid plan development.}
+\cvitem{Communication}{Good communication skills gained through experience and courses}
+
+
+%\section{Main projects}
+%\cventry{Heterogeneous routing}{Assistant Leader}{implementation of heterogeneous vehicular routing on top of COMMSIGNIA OBUs (On-Board Unit) for infotainment ADAS applications}{}{}{}
+%\cventry{Smart Parking app}{Assistant Leader}{design and implementation of an android application to work on top of 3G/wifi and DSRC (V2X) connectivity}{}{}{}
+%\cventry{Automotive projects}{Software Architect}{System and software design of infotainment applications, including requirements writing and review, signals design and partners management. Main projects: Park Aid, Park Assist, Self-Learning Car, Climate, Seats}{}{}{}
+
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+%VECCHIA BIBLIOGRAFIA
+%\nocite{felice2014distributed, de2014traffic, salvo2012infotainment, salvo2013timer, DeFelice2014, baiocchi2013vehicular}
+%\bibliographystyle{plain}
+%\bibliography{bibliography}                   % 'publications' is the name of a BibTeX file
+\section{Scientific Publications}
+https://scholar.google.co.uk/citations?user=RFiDHhgAAAAJ
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+%
+%\clearpage
+%%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+%
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%
+%\makeletterclosing
+%
+%%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
